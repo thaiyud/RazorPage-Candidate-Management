@@ -1,0 +1,55 @@
+﻿@page
+@model CandidateManagement_TrinhQuocThai_PRN221.Pages.CandidateProfilePage.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    .container {
+        margin-top: 20px;
+    }
+
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-link {
+        margin-right: 10px; /* Add space between links */
+    }
+</style>
+
+<div class="container">
+    <h1 class="text-center">@ViewData["Title"]</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="text-center">Candidate Profile</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CandidateProfile.Fullname)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.CandidateProfile.Fullname)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CandidateProfile.Birthday)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.CandidateProfile.Birthday)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CandidateProfile.ProfileShortDescription)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.CandidateProfile.ProfileShortDescription)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CandidateProfile.ProfileUrl)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.CandidateProfile.ProfileUrl)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CandidateProfile.Posting)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.CandidateProfile.Posting.JobPostingTitle)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="text-center" style="margin-top: 20px;">
+        <a asp-page="./Edit" asp-route-id="@Model.CandidateProfile?.CandidateId" class="btn btn-warning  mx-1">
+            <i class="bi bi-pencil-square"></i> Edit
+        </a>
+        <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

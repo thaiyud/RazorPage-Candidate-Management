@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\sem7\\PRN211\\project\\RazorPage-Candidate-Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3DA4D6-1A2E-46CE-939C-A853393DACCD}|CandidateManagement_TrinhQuocThai_PRN221\\CandidateManagement_TrinhQuocThai_PRN221.csproj|d:\\sem7\\prn211\\project\\razorpage-candidate-management\\candidatemanagement_trinhquocthai_prn221\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C3DA4D6-1A2E-46CE-939C-A853393DACCD}|CandidateManagement_TrinhQuocThai_PRN221\\CandidateManagement_TrinhQuocThai_PRN221.csproj|solutionrelative:candidatemanagement_trinhquocthai_prn221\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 265,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\sem7\\PRN211\\project\\RazorPage-Candidate-Management\\CandidateManagement_TrinhQuocThai_PRN221\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CandidateManagement_TrinhQuocThai_PRN221\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\sem7\\PRN211\\project\\RazorPage-Candidate-Management\\CandidateManagement_TrinhQuocThai_PRN221\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CandidateManagement_TrinhQuocThai_PRN221\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwB8AAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T16:37:03.829Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

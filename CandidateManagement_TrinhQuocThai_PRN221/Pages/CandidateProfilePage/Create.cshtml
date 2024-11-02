@@ -1,0 +1,141 @@
+﻿@page
+@model CandidateManagement_TrinhQuocThai_PRN221.Pages.CandidateProfilePage.CreateModel
+
+@{
+    ViewData["Title"] = "Create Candidate Profile";
+}
+<style>
+    .form-control {
+        height: 40px; 
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3; 
+        border-color: #0056b3;
+    }
+
+    .card {
+        border-radius: 10px;
+        width: 100%; /* Full width for the card */
+    }
+
+    .card-header {
+        background-color: #f8f9fa; 
+        color: #333;
+    }
+
+    .text-danger {
+        font-size: 0.9rem; 
+    }
+
+    .form-group label {
+        font-size: 0.9rem; 
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        font-size: 0.9rem; 
+    }
+
+    .button-group {
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    .button-group .btn {
+        flex: 1; 
+        margin-right: 10px; 
+    }
+
+    .button-group .btn:last-child {
+        margin-right: 0; 
+    }
+
+     .card {
+            max-width: 600px;
+        }
+   
+</style>
+<div class="container mt-4">
+    <h1 class="text-center mb-4 text-info">@ViewData["Title"]</h1>
+    <hr />
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6"> <!-- Increased column size for larger width -->
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <form method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CandidateProfile.CandidateId" class="control-label"></label>
+                            <input asp-for="CandidateProfile.CandidateId" class="form-control" />
+                            <span asp-validation-for="CandidateProfile.CandidateId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CandidateProfile.Fullname" class="control-label"></label>
+                            <input asp-for="CandidateProfile.Fullname" class="form-control" />
+                            <span asp-validation-for="CandidateProfile.Fullname" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CandidateProfile.Birthday" class="control-label"></label>
+                            <input asp-for="CandidateProfile.Birthday" class="form-control" type="date" />
+                            <span asp-validation-for="CandidateProfile.Birthday" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CandidateProfile.ProfileShortDescription" class="control-label"></label>
+                            <textarea asp-for="CandidateProfile.ProfileShortDescription" class="form-control" rows="2"></textarea>
+                            <span asp-validation-for="CandidateProfile.ProfileShortDescription" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CandidateProfile.ProfileUrl" class="control-label"></label>
+                            <input asp-for="CandidateProfile.ProfileUrl" class="form-control" />
+                            <span asp-validation-for="CandidateProfile.ProfileUrl" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CandidateProfile.PostingId" class="control-label"></label>
+                            <select asp-for="CandidateProfile.PostingId" class="form-control" asp-items="ViewBag.PostingId"></select>
+                            <span asp-validation-for="CandidateProfile.PostingId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4 button-group">
+                            <button type="submit" class="btn btn-primary">Create Profile</button>
+                            <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            const birthdayInput = document.querySelector("#CandidateProfile_Birthday");
+            const birthdayDate = new Date(birthdayInput.value);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            if (birthdayDate >= today) {
+                event.preventDefault(); 
+                alert("Birthday must be a date in the past.");
+            }
+        });
+    </script>
+}
+
+
